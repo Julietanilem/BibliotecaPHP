@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketmater 2.0</title>
+    <link rel="icon" href="https://cdn.mos.cms.futurecdn.net/aDjAiPYfh6vFMwqgTMTMu8.jpg" type="image/jpg">
+</head>
+<body>
+    <h1 align="center">Ticketmaster pero bien hecho</h1>
+    <p>
+        Atendiendo a esta necesidad de tener una buena plataforma para adquirir los boletos para nuestros artistas favoritos hemos creado esta plataforma. 
+        Solo llena tus datos y solcita tus boletos.
+    </p>
+    <img src="https://cdn-3.expansion.mx/dims4/default/39b7626/2147483647/strip/true/crop/1254x836+0+0/resize/1200x800!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F7d%2Fcf%2F85fbd49b4a75a7b18d8563088ee6%2Fconciertos-2023-mexico.jpg" alt="concierto" height="100px">
+    <img src="https://cdn-3.expansion.mx/dims4/default/eb121a7/2147483647/strip/true/crop/1260x833+0+0/resize/1200x793!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F79%2F82%2F447e001b42a6ae180281dee501e0%2Fistock-1330424071.jpg" height="100px">
+    <img src="https://www.elfinanciero.com.mx/resizer/h0xsKSFCHb68qnVf6r6T_W8vOW4=/1200x630/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/RETRCY2HWJHLRJ5QCYGFC4CY3M.jpg" height="100px">
+    <img src="https://www.elsoldemexico.com.mx/incoming/qrvd4q-pexels-harrison-haines-3172566.jpg/ALTERNATES/LANDSCAPE_768/pexels-harrison-haines-3172566.jpg" height="100px">
+    <img src="https://blog.ticketmaster.com.mx/wp-content/uploads/2022/10/Conciertos-2023.jpg" height="100px">
+    <img src="https://gobiernodesolidaridad.gob.mx/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-10-at-11.48.43-PM-1024x682.jpeg" height="100px">
+    <img src="https://www.dondeir.com/wp-content/uploads/2021/05/plataformas-conciertos-en-streaming.jpg" height="100px" >
+    <h2>¡Empiecen a reservar para su evento!</h2>
+    <form action="./ticketmaster.php" method="post"  target="_blank">
+        <fieldset>
+            <legend>Datos de tu evento:</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required ><br><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required ><br><br>
+
+            <label for="fechaEvento">Fecha del evento:</label>
+            <input type="date" id="fechaEvento" name="fechaEvento" required ><br><br>
+
+            <label for="artista">Artista:</label>
+            <select id="artista" name="artista" required>
+                <option disabled>Selecciona tu artista favorito</option>
+                <option value="TS">Taylor Swift</option>
+                <option value="LuisMiguel">Luis Miguel</option>
+                <option value="AM">Arctic Monkeys</option>
+                <option value="HeroesD">Héroes del silencio</option>
+                <option value="rosalia">Rosalia</option>
+            </select><br><br>
+            
+            <label for="zona">Zona:</label>
+            <select id="zona" name="zona" required>
+                <option disabled>Selecciona tu zona</option>
+                <option value="pista">Zona de pista</option>
+                <option value="asientosR">Asientos reservados</option>
+                <option value="gradas">Gradas</option>
+                <option value="VIP">Zona VIP</option>
+                <option value="palcos">Palcos</option>
+            </select><br><br>
+
+            <label for="boletos">Número de las unidades:</label>
+            <input type="number" min="1" id="boletos" name="numeroDeBoletos" required><br><br>
+
+            <strong>Lugar:</strong><br>
+            <input type="radio" name="lugar" id="auditorio" value="auditorio">
+            <label for="auditorio">Auditorio</label><br>
+
+            <input type="radio" name="lugar" id="palacio" value="palacio">
+            <label for="palacio">Palacio de los Deportes</label><br> 
+
+            <input type="radio"  name="lugar" id="foro" value="foro">
+            <label for="foro" >Foro Sol</label><br>
+
+            <input type="radio"  name="lugar" id="teatro" value="teatro">
+            <label for="teatro">Teatro Metropolitan</label><br> <br>
+
+            <strong>Extras:</strong><br>
+            <input type="checkbox" name="extras[]" id="comida" value="Paquete de comida">
+            <label for="comida">Paquete con comida</label><br>
+            <input type="checkbox" name="extras[]" id="paqVIP" value="Pase VIP">
+            <label for="paqVIP">Pase VIP</label><br>
+            <input type="checkbox" name="extras[]" id="estacionamiento" value="estacionamiento">
+            <label for="estacionamiento">Estacionamiento</label><br><br>
+           
+
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

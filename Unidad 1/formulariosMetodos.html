@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios ejemplo</title>
+    <link rel="icon" href="./media/img/coyote-html-diseño.ico" type="image/x-icon">
+ 
+</head>
+<body>
+    <!-- formulario ejemplo post -->
+    <form action="formulario.php" method="post" name="formularioPost" autocomplete="off" target="_blank">
+        <fieldset>
+            <legend>Formualrio ejemplo para POST</legend>
+            <label for ="telefono">Telefono: </label>
+            <input type="number" id="telefono" name="telefono" placeholder="5510101010" ><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="july@gmail.com" required><br>
+            <button type="submit">Enviar</button>
+            <button type="reset"> Borrar</button>
+        </fieldset>
+    </form><br><br>
+    <!-- Formulario ejemplo get -->
+    <form  action="formulario.php" method="get" name="formularioGet" autocomplete="on" target="_self">
+            <fieldset>
+                <legend>Formualrio ejemplo para GET</legend>
+                <label>Nombre: 
+                    <!-- select -->
+                    <input type="text" name="nombre" ><br> 
+                </label>
+                <label>Contraseña:
+                    <!-- textarea -->
+                    <input type="password" name="Contrasena" ><br>
+                </label> 
+                <input type="submit" value="Enviar">
+            </fieldset>
+    </form>
+</body>
+</html>

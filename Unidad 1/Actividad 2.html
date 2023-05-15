@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raphaelmanía</title>
+    <link rel="icon" href="Raphaelmanía.png" type="image/icon">
+</head>
+<body>
+    <h1>RAPHAEL MANÍA</h1>
+    <p>Bienvenida/o a <strong>Raphaelmanía</strong>. La mejor tienda de todo México para comprar discos de Raphael. Disfruta</p>
+    <hr>
+    <h3>Da un vistazo a los lanzamientos más recientes:</h3>
+    <table border="1" cellpadding="20px" style="border-collapse: collapse">
+        <tbody>
+            <tr>
+                <td> <img src="Victoria.png" alt="Victoria" width="300" height="300"><br>Victoria (2022)</td>
+                <td> <img src="6.0%20En%20Concierto.png" alt="Victoria" width="300" height="300"><br>Raphael - 6.0 En Concierto (2021)</td>
+                <td> <img src="6.0.png" alt="6.0" width="300" height="300"><br>6.0 (2020)</td>
+                <td> <img src="RESinphonico.png" alt="RESinphónico" width="300" height="300"><br>Sinphónico y RESinphónico (2019)</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3>¡Realiza tu compra ya mismo!</h3>
+    <form name="Datos de contacto" autocomplete="on">
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <br>
+            <label for="correo">Correo: </label>
+            <input type="email" id="correo" name="correo">
+            <br>
+            <br>
+            <label for="telefonoC">Teléfono: </label>
+            <input type="tel" id="telefonoC" name="telefonoC">
+            <br>
+            <br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad"><br><br>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion"><br><br>
+
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea><br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </fieldset>
+    </form>
+    <br>
+    <form action="formulario.php" >
+        <fieldset>
+            <legend>Detalles del producto</legend>
+            <label for="producto">Producto:</label>
+            <select id="producto" name="producto">
+                <option value="Victoria">Victoria</option>
+                <option value="6.0 En Concierto">6.0 En Concierto</option>
+                <option value="6.0">6.0</option>
+                <option value="Sinphónico & RESinphónico">Sinphónico & RESinphónico</option>
+            </select><br><br>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad"><br><br>
+
+            <label>Formato:</label>
+            <input type="radio" id="LP" name="formato" value="LP">
+            <label for="LP">LP</label>
+            <input type="radio" id="CD" name="formato" value="CD">
+            <label for="CD">CD</label>
+            <input type="radio" id="CD_2" name="formato" value="CD 2">
+            <label for="CD_2">CD (2 Discos)</label><br><br>
+
+            <label>Extras:</label>
+            <input type="checkbox" id="envio" name="extras[]" value="Envío express">
+            <label for="envio">Envío express</label>
+            <input type="checkbox" id="envoltura" name="extras[]" value="Envoltura de regalo">
+            <label for="envoltura">Envoltura de regalo</label><br><br>
+
+            <label for="fecha">Fecha de entrega:</label>
+            <input type="date" id="fecha" name="fecha"><br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </fieldset>
+    </form>
+</body>
+</html>

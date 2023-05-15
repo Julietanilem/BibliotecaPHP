@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CW Moda</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/015/066/880/original/women-fashion-logo-template-with-clothes-hanger-luxury-clothes-logo-for-business-boutique-fashion-shop-model-shopping-and-beauty-free-vector.jpg" type="image/jpg">
+</head>
+<body>
+    <h1 align="center">CW MODA</h1>
+    <p>
+        <strong>¡Bienvenidos!</strong> a esta página de ventas, aquí encontrarás los productos de la más alta calidad y llegarán directo a la puerta de tu casa
+        Por favor, llena el formulario y realiza una compra con nosotros.
+    </p>
+    <hr>
+    <h3 align="center">Nuestros productos</h3>
+    <table cellpadding="30px" align="center" border="2" style="border-collapse:collapse;">
+        <thead>
+            <tr>
+                <th>Faldas</th>
+                <th>Vestidos</th>
+                <th>Pantalones</th>
+                <th>Blusas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><img src="https://m.media-amazon.com/images/I/612fYhvDhHL._AC_SX522_.jpg" alt="falda" width="80px"></th>
+                <th><img src="https://www.davidsbridal.com.mx/3198-large_default/Vestido-XV-A%C3%B1os-Escote-V-Aplicaciones-De-Pedreria.jpg" alt="vestido" width="80px"></th>
+                <th><img src="https://media.cnn.com/api/v1/images/stellar/prod/210304163143-lasso-jeans-indigo.jpg" alt="Pantalones" height="120px"></th>
+                <th><img src="https://www.ticketstores.co/media/catalog/category/BLUSA_1.jpg" alt="blusas" height="120px"></th>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3 align="center">Haz tu compra ahora mismo</h3>
+    <form>
+        <fieldset>
+            <legend>Datos peronales</legend>
+            <label>Nombre:
+                <input type="text" placeholder="Juanita Perez" required/>
+            </label><br><br>
+            <label>Correo:
+                <input type="email" placeholder="Juanita@gamil.com" required/>
+            </label><br><br>
+            <label for="numero">Telefono:
+                <input type="tel"  maxlength="10" pattern="55[0-9]{8}" placeholder="5510101010" required>
+            </label><br><br>
+            <label for="edad">Edad:</label>
+            <select id="edad">Edad
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+            </select><br><br>
+            <label for="estado">Estado:</label>
+            <select id="estado">Estado
+                <option value="1">CDMX</option>
+                <option value="2">EDOMEX</option>
+                <option value="3">Hidalgo</option>
+            </select><br><br>
+            <label for="Comentarios">Comentarios:</label><br>
+            <textarea id="Comentarios"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="Producto">Producto:</label>
+            <select id="Producto">
+                <option value="1">Falda</option>
+                <option value="2">Vestido</option>
+                <option value="3">Pantalón</option>
+                <option value="4">Blusa</option>
+            </select><br><br>
+            <legend>Producto</legend>
+            <label>Piezas:
+                <input type="number"required value="1"/>
+            </label><br><br>
+            <label>Color
+                <input type="Color"required value="1"/>
+            </label><br><br>
+            Talla<br>
+            <label>
+                <input name="talla" type="radio" required value="1"/>Chica
+            </label><br>
+            <label>
+                <input name="talla" type="radio" required value="2"/>Mediana
+            </label><br>
+            <label>
+                <input name="talla" type="radio" required value="3"/>Grande
+            </label><br><br>
+            Extras<br>
+            <label>
+                <input name="envio" type="checkbox" required value="1"/>Envío express
+            </label><br>
+            <label>
+                <input name="envio" type="checkbox" required value="1"/>Envoltura de regalo
+            </label><br><br>
+            <label>Día deseado de entrega:
+                <input name="envio" type="date" required value="1"/>
+            </label><br><br>
+
+        </fieldset>
+            <button type="submit">Comprar</button>
+            <button type="reset">Borrar</button>
+        
+    </form>
+</body>
+</html>

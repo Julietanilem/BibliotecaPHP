@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kid Toys</title>
+    <link rel="icon" href="./Logo.jpg" type="image/icon">
+</head>
+<body>
+    <h1 align="center">Kid Toys Store</h1>
+    <p>
+        <strong>Descripción: </strong>Somos los angeles quienes ofrecen juguetes a los niños que no obtuvieron regalo en Navidad, ¡pide tus 
+        papás convertir en tu propio Santa Claus!
+    </p>
+    <hr>
+
+    <h3 align="center">Juguetes</h3>
+    <table border="2" align="center" cellpadding="30px">
+        <thead>
+            <tr>
+                <th>Barbie</th>
+                <th>Dinosaurio</th>
+                <th>My little pony</th>
+                <th>Spiderman</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>
+                    <img src="Barbie.jpg" alt="Barbie Image" height="200" width="150">
+                </td>
+                <th>
+                    <img src="Dinosaurio.jpg" alt="Dinosaurio Image" height="200" width="180">
+                </td>
+                <td>
+                    <img src="Pony.jpg" alt="My little pony Image" height="200" width="210">
+                </td>
+                <td>
+                    <img src="Spiderman.jpg" alt="Spiderman Image" height="200" width="190">
+                </td>
+            </tr>
+            <tr>
+                <td>$20</td>
+                <td>$11</td>
+                <td>$10</td>
+                <td>$17</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+
+    <h3 align="center">Requisitos</h3>
+    <h4>Por favor completa lo siguiente: </h4>
+    <form>
+        <fieldset>
+            <legend>Datos del comprador</legend>
+            <label for="Nombre(s)">Nombre(s):
+                <input id="Nombre(s)" type="text">
+            </label>
+            <br>
+            <label for="Apellido(s)">Apellido(s):
+                <input type="text">
+            </label>
+            <br>
+            <label for="Edad">Edad:
+                <input type="number" maxlength="2" min="1">
+            </label>
+            <br>
+            <label for="Número de teléfono">Número de teléfono:
+                <input type="tel" maxlength="10" pattern="55[0-9]{8}" placeholder="55XXXXXXXX">
+            </label>
+            <br>
+            <label for="Email">Email:
+                <input type="email">
+            </label>
+            <br>
+            <label for="Dirección">Dirección:
+                <input type="text">
+            </label>
+            <br>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>Especificaciones del producto</legend>
+            <label for="Juguete">Juguete que quiere comprar: 
+                <select id="Juguete">
+                    <option value="Barbie">Barbie</option>
+                    <option value="Dinosaurio">Dinosaurio</option>
+                    <option value="My little pony">My little pony</option>
+                    <option value="Spiderman">Spiderman</option>
+                </select>
+            </label>
+            <br>
+            <label for="Cantidad">Cantidad de compras: 
+                <input type="range" min="1" max="10">
+            </label>
+            <br>
+            <label for="Fecha">Fecha para entregar el juguete: 
+                <input type="date">
+            </label>
+            <br>
+            
+        </fieldset>
+        <br>
+        <label for="Derecho">
+            <input type="checkbox" required>Política de privacidad
+        </label>
+        <br><br>
+
+        <input type="reset">
+        <input type="submit">
+    </form>
+
+</body>
+</html>
