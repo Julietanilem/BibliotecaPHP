@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi galería de imagenes</title>
 </head>
-<body>
-    <form action="./galeria.php" method="post" enctype="multipart/form-data" whith="100px" target="_self">
+<body align="center">
+    <form action="./galeria.php" method="post" enctype="multipart/form-data" whith="100px" target="_self" >
         <fieldset style="width: 400px;" >
             <legend>Sube tu imagen</legend>
             <label for="nom">Nombre:</label><br>
@@ -51,7 +51,7 @@
             }
             $i++;
         }
-        echo "<table border='1' cellpadding='10px' style='border-collapse:collapse;' align='center'>
+        echo "<h1 align='center'>Galería</h1><table border='1' cellpadding='10px' style='border-collapse:collapse;' align='center'>
                 <thead>
                     <tr>
                         <th>Nombre</th>
