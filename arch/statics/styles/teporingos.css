@@ -1,0 +1,83 @@
+h1{
+    color:#267a07;
+}
+#contenedor{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+} 
+#titulo{
+  
+    color: #8deb78fa;
+}
+#advertencia{
+    color: #05be2db1;
+}
+#btn{
+    background-image: linear-gradient(to right, #22a16afa 0%, #24ee4cdd  51%, #2daf0d  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 2px #1d1d1d;
+    border-radius: 10px;
+    display: block;
+    outline: none;
+    border: #067c47;
+}
+         
+
+#btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor:url("./statics/media/img/ajocursor.jpg"), "pointer";
+  }
+ #form-act{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    color: #127e3e;
+    font-weight: bolder;
+    background-color: #6bbb9c6f;
+    outline: #056c0c;
+    border-color: #04df72;
+    border-style: dashed;
+    border: 90px;
+ }
+ input[type="radio"]{
+    background-color:#8ee770 ;
+    color: #6ce195;
+ }
+ a{
+    background-image: linear-gradient(to right, #0eb614fa 0%, #07dc7cb1  51%, #95ccbc  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 20%;
+    margin: 0.5em;
+    padding: 0.3em 0.5em;
+ 
+ }
+ a:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor:url("./statics/media/img/ajocursor.jpg"), "pointer";  
+ }
+ fieldset>h3{
+    color: #00600b;
+    font-weight: bolder;
+ }
+input{
+    border:1px solid #1ee735 !important;
+}
